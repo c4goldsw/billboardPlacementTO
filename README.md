@@ -31,10 +31,18 @@ After framing the problem this way, each sign can receive a score for each crite
 To compute these scores, we first mined checkin data off of Foursquare using a grid search, resulting in the data below:
 [imageFQ]
 
-
+Below: graph of transit stops and cultural landmarks
 [image culture / transit]
 
+
+Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them.
+
+[checkin score]
+
+[weighted sum score]
+
 ##Source Code
+
 
 
 ##Data Sets
