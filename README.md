@@ -52,6 +52,6 @@ The code used to create some of these images, as well as mining data off of Four
 The code used to compute the location and ranking of the signs [can be found here](https://www.dropbox.com/sh/9ju0jdgvo0yg1dz/AADsGfNZ2dsT7ffJ9VSnRYAqa?dl=0).
 
 ##Data Sets
-[Cultural Landmarks](http://tranquant.com/datasource-detail/b9bcabac-a037-4bdc-9b81-f4d1fe03f47b)
-[Transit Stops](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=96f236899e02b210VgnVCM1000003dd60f89RCRD)
-[Mined Foursquare data]()
+*[Cultural Landmarks](http://tranquant.com/datasource-detail/b9bcabac-a037-4bdc-9b81-f4d1fe03f47b)
+*[Transit Stops](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=96f236899e02b210VgnVCM1000003dd60f89RCRD)
+*[Mined Foursquare data]()
