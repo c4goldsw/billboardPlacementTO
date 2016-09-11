@@ -43,6 +43,8 @@ Finally, we can compute the scores of each area using the individual scores, or 
 
 ##Source Code
 
+The code used to create some of these images, as well as mining data off of Foursquare, [can be found here](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3369275223907376/2553738767828155/6070394398366266/latest.html).
 
+The code used to 
 
 ##Data Sets
