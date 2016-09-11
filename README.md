@@ -32,7 +32,7 @@ To compute these scores, we first mined checkin data off of Foursquare using a g
 [imageFQ]
 
 Below: graph of transit stops and cultural landmarks
-![Culture and transit](https://raw.githubusercontent.com/c4goldsw/master/billboardPlacementTO/culturalLandmarks.png)
+![Culture and transit](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/culturalLandmarks.png)
 
 
 Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them.
