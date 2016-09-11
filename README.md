@@ -37,9 +37,9 @@ Below: graph of transit stops and cultural landmarks
 
 Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them.
 
-[checkin score]
+![checkin score](https://github.com/c4goldsw/billboardPlacementTO/blob/master/14281415_10207410383079348_586664125_n.png)
 
-[weighted sum score]
+![weighted sum score](https://github.com/c4goldsw/billboardPlacementTO/blob/master/14287694_10207410383839367_1925684785_n.png)
 
 ##Source Code
 
