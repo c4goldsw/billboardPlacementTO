@@ -12,7 +12,11 @@ A solution for determining the most optimal placement of location-based informat
 The City of Toronto wants to place digital billboard maps throughout the city in order to indicate landmarks or attractions within a certain area surrounding the map (i.e. a five minute walking radius).  Therefore, it is important to determine what the most optimal placement of the billboard maps is, as well as determining which maps are more valuable compared to other maps (i.e. ranking them based off their importance).
 
 ##Our Solution
-We were first given the cultural landmark dataset, which consists of properties labelled by the city as being availabe for use for any kind of cultural event.  Therefore, our initial idea was that we should seek to cluster cultural landmarks together.  The centroid of each cluster could then be an approximate location for placing a billboard map.  K - Means lends itself to the task very well.  One question however is how many centroids should be chosen.  We decided to frame this in terms of a cost problem: we should aim to maximize K to find the best placement of signs, whilst setting a threshold for maximum area overlap for all signs to prevent redundancy.  The threshold can be chosen arbitrarily and is something that a city will need to consider when trying to deploy the billboard maps.
+We were first given the cultural landmark dataset, which consists of properties labelled by the city as being availabe for use for any kind of cultural event (below: cultural landmarks in orange, transit stops in green for reference).  
+
+![Culture and transit](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/culturalLandmarks.png)
+
+Therefore, our initial idea was that we should seek to cluster cultural landmarks together.  The centroid of each cluster could then be an approximate location for placing a billboard map.  K - Means lends itself to the task very well.  One question however is how many centroids should be chosen.  We decided to frame this in terms of a cost problem: we should aim to maximize K to find the best placement of signs, whilst setting a threshold for maximum area overlap for all signs to prevent redundancy.  The threshold can be chosen arbitrarily and is something that a city will need to consider when trying to deploy the billboard maps.
 
 ![Overlap vs K](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/14348681_10207410354878643_234648286_n.png)
 
@@ -30,9 +34,6 @@ After framing the problem this way, each sign can receive a score for each crite
 
 To compute these scores, we first mined checkin data off of Foursquare using a grid search, resulting in the data below:
 ![Checkins](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/checkins.png)
-
-Below: graph of transit stops and cultural landmarks
-![Culture and transit](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/culturalLandmarks.png)
 
 
 Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them.
