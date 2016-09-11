@@ -35,8 +35,7 @@ After framing the problem this way, each sign can receive a score for each crite
 To compute these scores, we first mined checkin data off of Foursquare using a grid search, resulting in the data below:
 ![Checkins](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/checkins.png)
 
-
-Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them.
+Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them ("Final Score").
 
 ![checkin score](https://github.com/c4goldsw/billboardPlacementTO/blob/master/14281415_10207410383079348_586664125_n.png)
 
