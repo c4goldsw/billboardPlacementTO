@@ -41,6 +41,10 @@ Finally, we can compute the scores of each area using the individual scores, or 
 
 ![weighted sum score](https://github.com/c4goldsw/billboardPlacementTO/blob/master/14287694_10207410383839367_1925684785_n.png)
 
+The top five of these signs using the weighted score can be seen below:
+
+![top 5 weighted](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/14287711_10207410435320654_433809610_n.png)
+
 ##Source Code
 
 The code used to create some of these images, as well as mining data off of Foursquare, [can be found here](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3369275223907376/2553738767828155/6070394398366266/latest.html).
