@@ -54,4 +54,4 @@ The code used to compute the location and ranking of the signs [can be found her
 ##Data Sets
 * [Cultural Landmarks](http://tranquant.com/datasource-detail/b9bcabac-a037-4bdc-9b81-f4d1fe03f47b)
 * [Transit Stops](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=96f236899e02b210VgnVCM1000003dd60f89RCRD)
-* [Mined Foursquare data]()
+* [Mined Foursquare data](https://github.com/c4goldsw/billboardPlacementTO/blob/master/checkins_final.txt)
