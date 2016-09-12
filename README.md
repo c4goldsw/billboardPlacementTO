@@ -49,7 +49,8 @@ The top five of these signs using the weighted score can be seen below:
 
 The code used to create some of these images, as well as mining data off of Foursquare, [can be found here](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3369275223907376/2553738767828155/6070394398366266/latest.html).
 
-The code used to compute the location and ranking of the signs [can be found here](https://www.dropbox.com/sh/9ju0jdgvo0yg1dz/AADsGfNZ2dsT7ffJ9VSnRYAqa?dl=0).
+The code used to compute the location and ranking of the signs can be found 
+in the repository.
 
 ##Data Sets
 * [Cultural Landmarks](http://tranquant.com/datasource-detail/b9bcabac-a037-4bdc-9b81-f4d1fe03f47b)
