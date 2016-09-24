@@ -54,15 +54,14 @@ The top five of these signs using the weighted score can be seen below:
 ![top 5 weighted](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/finalScoreTop5.png)
 
 ##Possible Improvements
-Optimization Problem: 
+###Optimization Problem
+Our first major improvement would be to make a formal optimization problem. This would allow us to make a rigourous free from bias - a formal machine learning problem. This was difficult to implement given our time constraints and the open-endedness of the challenge. Removing human bias will also involve creating a simpler scoring, which is currently a major source of human bias, due to our chosen importance weighting for our various scoring factors (e.g. public transport proximity vs. social media popularity). Our weights were chosen rather arbitrarily, but given a well-stated optimization problem with ample labelled training data, we can solve it with machine learning methods. 
 
-Simpler Scoring: 
+###Sign Placement
+Finally, instead of placing signs in the middle of a cluster (which could be anywhere), we can simply place signs in the nearest intersection with the most pedestrian traffic.
 
-Sign Placement:
-
-##What We Learned
-
-
+##Implementation
+After producing a reasonable model based on k-means and popularity scoring, our partners from the City of Toronto can use our results to help them determine optimal sign placements. Naturally, there are many factors that are involved with such a project that are not represented in the data (i.e. equal distribution of signs among city wards).   
 
 ##Source Code
 
