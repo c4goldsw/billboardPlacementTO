@@ -39,10 +39,10 @@ After framing the problem this way, each sign can receive a score for each crite
 To compute these scores, we first mined checkin data off of Foursquare using a grid search, resulting in the graph below:
 ![Checkins](https://github.com/c4goldsw/billboardPlacementTO/blob/a2a498dc4ffd27e0c370efeb43a4578f06483e0b/images/checkins.png)
 
-We then ranked the signs based on their popularity on social media (see 1.)
+We then ranked the signs based on their popularity on social media.
 ![checkin score](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/checkinScore.png)
 
-Using the City of Toronto transit stop dataset, we ranked the signs based on their proximity to transit stops in the graph below (see 3.).
+Using the City of Toronto transit stop dataset, we ranked the signs based on their proximity to transit stops in the graph below.
 ![Transit](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/a2a498dc4ffd27e0c370efeb43a4578f06483e0b/images/transitScore.png)
 
 We normalized the scores based on their z-score to put them all on the same scale. Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them ("Final Score").
@@ -62,6 +62,8 @@ Finally, instead of placing signs in the middle of a cluster (which could be any
 
 ##Implementation
 After producing a reasonable model based on k-means and popularity scoring, our partners from the City of Toronto can use our results to help them determine optimal sign placements. Naturally, there are many factors that are involved with such a project that are not represented in the data (i.e. equal distribution of signs among city wards).   
+
+More generally, our analysis can be used to determine hotspots over Toronto for various business purposes. The social media data can be filtered to focus on specific demographics and where in Toronto they are most active. In conclusion, there are many uses of our model, for governmental and business purposes. 
 
 ##Source Code
 
