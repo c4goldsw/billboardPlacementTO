@@ -2,7 +2,7 @@
 A solution for determining the most optimal placement of location-based information maps throughout Toronto.
 
 ##The Team & Mentor
-**Chris Goldsworthy**: Chris is a third-year undergraduate Computer Sciecne student at the University of Toronto.  He has an interest in machine learning and will be focusing on ML for the remainder of his undergraduate education.
+**Chris Goldsworthy**: Chris is a third-year undergraduate Computer Science student at the University of Toronto.  He has an interest in machine learning and will be focusing on ML for the remainder of his undergraduate education.
 
 **Danny Luo**: Danny is a third-year undergraduate Math and Physics student at the University of Toronto.  He has a growing interest in data science and is actively teaching himself about the field.
 
@@ -14,11 +14,11 @@ The City of Toronto wants to place digital billboard maps throughout the city in
 ##Our Solution
 We were first given the cultural landmark dataset, which consists of properties labelled by the city as being availabe for use for any kind of cultural event (below: cultural landmarks in orange, transit stops in green for reference).  
 
-![Culture and transit](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/culturalLandmarks.png)
+![Culture and transit](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/culturalLandmarks.png)
 
 Therefore, our initial idea was that we should seek to cluster cultural landmarks together.  The centroid of each cluster could then be an approximate location for placing a billboard map.  K - Means lends itself to the task very well.  One question however is how many centroids should be chosen.  We decided to frame this in terms of a cost problem: we should aim to maximize K to find the best placement of signs, whilst setting a threshold for maximum area overlap for all signs to prevent redundancy.  The threshold can be chosen arbitrarily and is something that a city will need to consider when trying to deploy the billboard maps.
 
-![Overlap vs K](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/14348681_10207410354878643_234648286_n.png)
+![Overlap vs K](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/overlapPenalty.png)
 
 Next, we wanted to determine which areas signs are the most valuable and rank them accordingly.  There are several ways to determine which signs are the most valuable, but intuitively, it can be framed as areas with:
 
@@ -37,13 +37,13 @@ To compute these scores, we first mined checkin data off of Foursquare using a g
 
 Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them ("Final Score").
 
-![checkin score](https://github.com/c4goldsw/billboardPlacementTO/blob/master/14281415_10207410383079348_586664125_n.png)
+![checkin score](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/checkinScore.png)
 
-![weighted sum score](https://github.com/c4goldsw/billboardPlacementTO/blob/master/14287694_10207410383839367_1925684785_n.png)
+![weighted sum score](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/finalScore.png)
 
 The top five of these signs using the weighted score can be seen below:
 
-![top 5 weighted](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/14287711_10207410435320654_433809610_n.png)
+![top 5 weighted](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/finalScoreTop5.png)
 
 ##Source Code
 
