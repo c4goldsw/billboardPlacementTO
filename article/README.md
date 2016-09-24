@@ -18,9 +18,7 @@ We were first given the cultural landmark dataset, hosted on TranQuant, which co
 
 Due to the small size of the dataset, we decided to use ipython notebook to do the main analysis and databricks notebook to mine social media data. 
 
-Our initial idea was that we should seek to cluster cultural landmarks together.  The centroid of each cluster could then be an approximate location for placing a billboard map.  K - Means lends itself to the task very well.  One question however is how many centroids should be chosen.  We decided to frame this in terms of a cost problem: we should aim to maximize K to find the best placement of signs, whilst setting a threshold for maximum area overlap for all signs to prevent redundancy.  The threshold can be chosen arbitrarily and is something that a city will need to consider when trying to deploy the billboard maps.
-
-![Overlap vs K](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/overlapPenalty.png)
+Our initial idea was that we should seek to cluster cultural landmarks together.  The centroid of each cluster could then be an approximate location for placing a billboard map.  K - Means lends itself to the task very well.  One question however is how many centroids should be chosen.  We had wanted to frame this in terms of an optimization problem, but had we struggled come with a clear-cut loss metric.  Therefore, we decided to create a loss metric bssed off the overlap of the area surroudning each sign - we defined this area to be anywhere within a five minute's walking distance of each sign (these areas are represented by circles surroudning each sign placement in the graphs below).  We then chose to place approximately 200 signs, based on the overlap penalty and visual inspection.
 
 We visualized the results of the K - Means clustering in the next figure, in which we divided the city according to what cluster it belonged to.
 
@@ -38,18 +36,33 @@ After framing the problem this way, each sign can receive a score for each crite
 2. To see which area has the most cultural landmarks, we simply sum the number of landmarks in the area surrounding a sign
 3. To determine which areas are most accesiable by public transport, we sum the number of transit stops in the area the sign covers
 
-To compute these scores, we first mined checkin data off of Foursquare using a grid search, resulting in the data below:
+To compute these scores, we first mined checkin data off of Foursquare using a grid search, resulting in the graph below:
 ![Checkins](https://github.com/c4goldsw/billboardPlacementTO/blob/a2a498dc4ffd27e0c370efeb43a4578f06483e0b/images/checkins.png)
 
-Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them ("Final Score").
-
+We then ranked the signs based on their popularity on social media (see 1.)
 ![checkin score](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/checkinScore.png)
+
+Using the City of Toronto transit stop dataset, we ranked the signs based on their proximity to transit stops in the graph below (see 3.).
+![Transit](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/a2a498dc4ffd27e0c370efeb43a4578f06483e0b/images/transitScore.png)
+
+We normalized the scores based on their z-score to put them all on the same scale. Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them ("Final Score").
 
 ![weighted sum score](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/finalScore.png)
 
 The top five of these signs using the weighted score can be seen below:
 
 ![top 5 weighted](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/images/finalScoreTop5.png)
+
+##Possible Improvements
+Optimization Problem: 
+
+Simpler Scoring: 
+
+Sign Placement:
+
+##What We Learned
+
+
 
 ##Source Code
 
