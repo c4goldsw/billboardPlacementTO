@@ -33,7 +33,7 @@ After framing the problem this way, each sign can receive a score for each crite
 3. To determine which areas are most accesiable by public transport, we sum the number of transit stops in the area the sign covers
 
 To compute these scores, we first mined checkin data off of Foursquare using a grid search, resulting in the data below:
-![Checkins](https://raw.githubusercontent.com/c4goldsw/billboardPlacementTO/master/checkins.png)
+![Checkins](https://github.com/c4goldsw/billboardPlacementTO/blob/a2a498dc4ffd27e0c370efeb43a4578f06483e0b/images/checkins.png)
 
 Finally, we can compute the scores of each area using the individual scores, or using a weighted sum of them ("Final Score").
 
