@@ -1,10 +1,10 @@
-# Optimal Digital Map Placement in Toronto
+# Optimal Information Map Placement in Toronto
 A solution for determining the most optimal placement of location-based information maps throughout Toronto.
 
 ##The Team & Mentor
-Chris Goldsworthy and Danny Luo are third-year students at the University of Toronto who have known each since first year. They happened to both be participating in HackOn(Data) and decided to work together. Because of their background in computer science and math, they had a good grasp of the basic tools needed to copmlete data science related tasks. Their mentor, Ryan Garnett, is a geographist who works for the City, specializing in curating and using geospatial datasets.
+Chris Goldsworthy and Danny Luo are third-year students at the University of Toronto who have known each since first year. They both happened to be participating in HackOn(Data) - after finding out that they were both involved in the hackathon, they decided to work together.  Because of their background in computer science and math, they had a good grasp of the basic tools needed to copmlete data science related tasks. Their mentor, Ryan Garnett, is a geographist who works for the City, specializing in curating and using geospatial datasets.
 
-With the guidance of their mentor Ryan and their preparation over the preceding week, Danny and Chris had a good start to their project. They had a great time listening to the various speakers at HackOn(Data) and were able to meet similar-minded data enthuasiasts. 
+With the guidance of their mentor Ryan and their preparation over the week preceding the final event, Danny and Chris sucessfully managed to create a model that attempted to find the most optimal placement for the information signs.  They had a great time listening to the various speakers at HackOn(Data) and were able to meet similar-minded data enthuasiasts. 
 
 ##The Challenge
 The City of Toronto wants to place digital billboard maps throughout the city in order to indicate landmarks or attractions within a certain area surrounding the map (i.e. a five minute walking radius).  Therefore, it was important to determine what the most optimal placement of the billboard maps is, as well as determining which maps are more valuable compared to other maps (i.e. ranking them based off their importance).
