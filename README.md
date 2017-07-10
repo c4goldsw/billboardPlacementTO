@@ -1,5 +1,9 @@
 # Optimal Digital Map Placement in Toronto
-A solution for determining the most optimal placement of location-based information maps throughout Toronto.
+A solution for determining the most optimal placement of location-based information maps throughout Toronto. Third place project at [HackOn(Data) 2016](http://hackondata.com/2016/).
+
+*[A Detailed Report of Our Third-Place Solution](https://dluo.me/billboardPlacementTO/)*
+
+*[Danny's Blog Post on HackOn(Data) 2016 Experience](https://dluo.me/hackondata2016/)*
 
 ## The Team & Mentor
 **Chris Goldsworthy**: Chris is a third-year undergraduate Computer Science student at the University of Toronto.  He has an interest in machine learning and will be focusing on ML for the remainder of his undergraduate education.
